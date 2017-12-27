@@ -1,0 +1,34 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+  <ion-item>
+    <div style='position:relative;width:100%;'>
+      <label color="dark" style='position:absolute;left:0;height:54px;line-height:54px;'>用户名</label>
+      <input type="text" placeholder="请输入用户名" [(ngModel)]="user_name" style='width:100%;height:54px;padding-top:16px;padding-bottom:16px;padding-left:100px;border:0;'>
+    </div>
+  </ion-item>
+
+  <ion-item >
+    <div style='position:relative;width:100%;border-bottom:1px solid #dedede;'>
+      <label color="dark" style='position:absolute;left:0;height:54px;line-height:54px;'>密码</label>
+      <input type="password" placeholder="请输入密码" [(ngModel)]="user_pw" style='width:100%;height:54px;padding-top:16px;padding-bottom:16px;padding-left:100px;border:0;'>
+    </div>
+  </ion-item>
+  <ion-item>
+    <div>
+<!--       <button ion-button color="secondary" (click)="signup()" style="width:50%;height:4.4rem;font-size:1.8rem;border-radius:4px;margin-top:16px;">注册</button>
+ -->      <button ion-button (click)="login()" color="primary" style="width:50%;height:4.4rem;font-size:1.8rem;border-radius:4px;margin-top:16px;">登录</button>
+    </div>
+  </ion-item>
+</ion-list>
+</ion-content>
