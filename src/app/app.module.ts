@@ -6,9 +6,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { LoginProvider } from '../providers/login/login';
 import { HttpModule } from '@angular/http';
+
+
+import { LoginProvider } from '../providers/login/login';
 import { UserProvider } from '../providers/user/user';
+import { SigninProvider } from '../providers/signin/signin';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -31,6 +35,7 @@ import { UserProvider } from '../providers/user/user';
     LoginProvider,
     UserProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    SigninProvider,
 
   ]
 })
